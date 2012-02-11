@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Welcome to ZenCoders</title>
+<script type="text/javascript" src="//js.sopablackout.org/sopablackout.js"></script> 
+    <style type='text/css'>
+
+	html {
+		height:100%;
+	}
+
+
+	body {
+		height:100%;
+		width:100%;
+		margin:0px;
+		padding:0px;
+		background-color:#000;
+		font-family: monospace;
+		color: #fff;
+	}
+	div{
+		padding-top: 5px;
+	}
+	div#logo {
+		align: center;
+		width: 391px;
+		margin: auto;
+		font-size: 7px;
+	}
+	h1{
+		text-align: center;
+	}
+	#menu {
+		text-align: center;
+		vertical-align: middle;
+		font-size: 17px;
+	}
+
+	a {
+		color: #000;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	#menu a{
+		color: #ccc;
+	}
+
+	a:hover {
+		background-color: #ccc;
+	}
+	#menu a:hover{
+		color: #000;
+	}
+	div#black {
+        	background-color: #000;
+		width: 100%;
+		height: 100%;
+	}
+	div#white {
+		width: 100%;
+	        background-color: #fff;
+		color: #000;
+		font-size: 14px;
+		padding-bottom: 70px;
+	}
+	div#gray {
+		width: 100%;
+	        background-color: #eee;
+		color: #000;
+		font-size: 14px;
+		padding-bottom: 70px;
+	}
+	div.container {
+		max-width: 720px;
+		align: center;
+		margin: auto;
+		border: 1;
+	}
+	
+
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+
+<script type="text/javascript">
+	var i=0;
+	var arr = ["black", "gray", "white"];
+	var arr1 = ["white", "gray", "black"];
+	var color;
+	function goToByScroll(id,duration){
+			
+	$('html,body').animate({scrollTop: $("#"+id).offset().top},duration);
+	}	
+$(document).ready(function(){
+		
+	/*$(document).keydown(function(e){
+		alert( e.keyCode );
+		return false;
+	});*/
+
+	$('#manifesto').click(function(event){
+		event.preventDefault();
+		goToByScroll('gray','slow');
+	});
+	$('#contacts').click(function(event){
+		event.preventDefault();
+		goToByScroll('white','slow');
+	});
+	$('.top').click(function(event){
+		event.preventDefault();
+		goToByScroll('black','slow');
+	});
+
+	$(document).keydown(function(e){
+		var keyCode = e.keyCode || e.which;	
+		switch (keyCode) {
+			case 34:
+			e.preventDefault();
+			$.each(arr, function(index, value) {
+				if ($(window).scrollTop() < $("#"+value).offset().top){
+					color=value;
+					return false;
+					}
+			});
+			goToByScroll(color,'fast');
+		break;	
+		case 33:
+			e.preventDefault();
+			$.each(arr1, function(index, value) { 
+				if ($(window).scrollTop()  > $("#"+value).offset().top){ 
+					color=value;
+					return false;
+				}
+			});
+			goToByScroll(color,'fast');
+		break;	
+
+		}
+	});
+	
+});
+</script>
+  </head>
+
+  <body>
+<div id="black" class="container">
+	<a name="top"></a><h1>ZenCoders</h1>
+<div id="logo">
+<pre>                                       with open('ZenCodes.                                  
+                                 `num` in numbers    synchronized                            
+                             datetime d      glob.      sys.argv[2] .                        
+                          def myclass   `..` @@oscla   org.    .  class {                    
+                       displ  hooks(   public static void   ma     functor:                  
+                     $myclass-&gt;method(  impport sys, os.pipe `    @param name`               
+                   fcl   if(system(cmd) myc.  /de   `  $card(  array("a"   srand             
+                 format  lists:  ++:   conc    ++ "my  an    WHERE  for(   == myi            
+               `sys:  myvalue(myvalue) sys.t    Console.W   try{    rais     using           
+              connec  SELECT * FROM table mycnf  acco desc and or selector::clas  at         
+             openldap string  sys.   print "zenc der " { 'a':   `ls -l` &gt;  appe &amp;firs        
+            import Tkinter    paste( $obh  &amp;a or it myval  bro roll:   :: [] require a       
+           case `` super. +y  &lt;svg x="100"&gt;   expr    say " %rooms 1  --account fb-  yy      
+          proc     meth Animate =&gt; send(D, open)     putd    EndIf 10  whi    myc`  cont     
+         and     main (--) import loop $$ or  end onload   UNION WITH tab    timer 150 *2    
+         end. begin True  GtkLabel *label    doto partition te    let auto  i&lt;- (i + d ) ;   
+        .mushup ``/.   ^/zenc/    myclass-&gt;her flv    op             &lt;&gt; element &gt;&gt; 71   or   
+        QFileDi   :   and  ..    with myc   toA  channel::bo    myc isEmpty a  not   bodt;  
+        class T   public pol    str    mycalc d   pt &amp;&amp;a     *i fc  add                ^ac  
+        ::ZenCoders::core::namespac   boost::function st  f = std:   ;;      int     assert 
+        cou   &lt;&lt; endl   public genera    #include "b ost   ::ac myna  const cast&lt;char*&gt; mys 
+        &amp;ac   size_t   return ran  int (*getNextValue)(void) ff   double  sa_family_t famil 
+        pu         a   do puts("       ac    int main(int argc, char*    "%5d    struct nam 
+        cs                float       for     typedef     enum  puts             getchar()   
+        if(                         else      #define      fp    FILE* f           char* s   
+         i++                                  strcat(            %s                    int   
+         31]                                  total+=                                  do    
+          }do                                 while(1)                                sle    
+          getc                               strcpy( a                               for     
+           prin                             scanf(%d, &amp;                             get      
+             int                       void myfunc(int par                       retu        
+               BEQ                 BGEZAL R1 10 ANDI R1 R2 1                    SYS          
+                XOR               SYSCAL 5 SLTIU   MFLO 15 SW                 JAL            
+                  BNE           BLTZAL R1 1 LUI   001 NOOP MULTU            SLLV             
+                    MOV R1     ADD R1 R2  JUMP   10 1001 BEQ R1 R2 1      AND                
+                       1101  1010001100  111 001 01  1010 101100 1001   100                  
+                         110110 100   0  01  101 01100 100 100 1000100011                    
+                            11101001001  00   11  100    11  10100010                        
+                                000101001001 10  1001    101000101                           
+                                     010010010010110101001010                                
+</pre>
+</div>
+<div id="menu">
+<br />
+<a href="#gray" id="manifesto">Manifesto</a> - <a id="contacts" href="#white">Contacts</a> - <a target="_blank" href="http://redmine.ZenCoders.org/projects">Projects</a>
+</div>
+</div>
+<div id="gray"> 
+	<div class="container">
+		<a class="top" name="manifesto" href="#top">&uarr;&uarr;&uarr;</a>
+		<h2>Manifesto</h2>
+		<h3>1. About us</h3>
+We are a group of developers and coders ( software developer ). We are all busy but we would like to build something together.
+
+
+<h3>2. Which advantages can you have joining us?</h3>
+
+
+Each group member can access projects hosted in our open repository. Everyone in the group can work together with others to develop its projects. It will be easier for all us to develop projects fast and towards innovative directions by working on others' projects. We will obtain new knowledge that maybe precluded working alone.
+
+<h3>3. What do we do together?</h3>
+
+
+We want to create a common development place, where everyone, putting his hand to code, can learn from each other to build projects together. Everyone, handling directly the code, can learn from other members.
+
+<h3>4. Which technology will be adopted?</h3>
+
+
+We don't adopt particularly any technology and we don't contest or ostracize any one.
+
+<h3>5. How do we release our software?</h3>
+
+
+The projects of the group are Open-source and the set of licences available is limited to:
+[GPL and GPL-compatible, BSD, MIT, Apache, Mozilla, Eclipse, DTFYW]
+
+
+<h3>6. Who can read our code?</h3>
+
+
+Anyone, anywhere in the world can access to the code developed within the group without actually being an active part. Everyone, in other words, has the right to checkout our projects even without being a member.
+
+
+<h3>7. How are projects managed?</h3>
+
+
+Each project has one or more project managers. To work on a project, in order to avoid chaos, you must be part of the group and request authorization to the project leader. If you want to bring the project in different directions, you can fork it becoming responsible for the fork.
+
+<h3>8. How can I join ZenCoders?</h3>
+
+
+If you want to join the ZenCoders Group you can send an email to a ZenCoders group member and we will organize a video call ( skype, hangouts, etc. ) to see and welcome you.
+
+
+<h3>9. How much will it cost?</h3>
+
+
+Nothing. The group doesn't require any membership fee, the only difference between people which pay or not is the right to access to the group's machine(s) (VPS) via ssh. Everyone, when and if he wants, can participate in the buying of VPS and will have immediate access to machines; this right will never be denied to anyone.
+
+<h3>10. Will I earn money?</h3>
+
+
+We don't earn any money! ZenCoders is totally a nonprofit group, now and forever!
+The main advantage to develop software within ZenCoders group is that you increase your experience and visibility.
+</div></div>
+<div id="white"> <div class="container">
+<a class="top" name="contacts" href="#top">&uarr;&uarr;&uarr;</a>	
+<h2>Contacts</h2>
+Mail us on hacklab||ZenCoders.org<br /><br />
+
+Join our project or ask to create your own on <a target="_blank" href="http://redmine.zencoders.org">redmine.zencoders.org</a><br /><br />
+
+We are waiting for you!
+
+
+</div></div>
+  </body>
+</html>
