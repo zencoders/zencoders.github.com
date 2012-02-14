@@ -30,11 +30,11 @@ if(                        else      #define     fp    FILE* f         char* s
   }do                                while(1)                             sle  
   getc                              strcpy( a                            for   
    prin                            scanf(%d, &                          get    
-     int                      void myfunc(int par                     retu      
-       BEQ                BGEZAL R1 10 ANDI R1 R2 1                  SYS        
-        XOR              SYSCALL 5 SLTIU MFLO 15 SW                 JAL         
-          BNE          BLTZAL R1 1 LUI  001 NOOP MULTU            SLLV          
-            MOV R1    ADD R1 R2  JUMP  10 1001 BEQ R1 R2 1      ANDI            
+     int                       void myfunc(int pa                     retu      
+       BEQ                   BNEQZ R1 10 ANDI R1 R2                  SYS        
+        XOR                SYSCALL 5 SLTIU MFLO 15 SW               JAL         
+          BNE            BLTZAL R1 1 LUI 001 NOOP MULTU           SLLV          
+            MOV R1     ADD R1 R2  JUMP  10 1001 BEQ R1 R2 1      ANDI            
                1101  1010001100  111 001 01  1010 101100 1001  100              
                  110110 100   0  01 101 01100 100 100 1000100011                
                     11101001001  00   11  100   11  10100010                    
