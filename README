@@ -42,4 +42,5 @@ if(                        else      #define     fp    FILE* f         char* s
                              010010010010110101001010
 
 For further information:
-visit our website www.zencoders.org
+visit our website www.zencoders.org or
+visit out irc channel on freenode.net -> #zencoders
