@@ -95,8 +95,15 @@
     div.ruolo,
     div.contatto
     {
-    	display:inline;
-    	padding-left:10px;
+    	display: block;
+	float: left;
+    	padding-left: 10px;
+    	width: 150px;
+    }
+    
+    ul.talks>li
+    {
+    	clear:both;
     }
 	
 </style>
@@ -197,7 +204,7 @@ L'evento si terrà giorno 4 Luglio ore 8:30 - 14:00 presso l'aula magna di ingeg
  - Via S.Sofia - Catania
 </p>
 <h1>Speaker e Argomenti</h1>
-<ul>
+<ul class='talks'>
 <li>
 <div class='autore'>Sebastiano Merlino</div>
 <div class='ruolo'></div>
