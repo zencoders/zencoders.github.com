@@ -55,19 +55,20 @@
 	#menu a:hover{
 		color: #000;
 	}
-	div#black {
+	div.black {
         	background-color: #000;
 		width: 100%;
 		height: 100%;
 	}
-	div#white {
+	div.white {
+		height: 100%;
 		width: 100%;
 	        background-color: #fff;
 		color: #000;
 		font-size: 14px;
 		padding-bottom: 70px;
 	}
-	div#gray {
+	div.gray {
 		width: 100%;
 	        background-color: #eee;
 		color: #000;
@@ -80,6 +81,9 @@
 		margin: auto;
 		border: 1;
 	}
+	html div h2{
+	padding-top: 30px;
+	}
 	
 
 </style>
@@ -87,61 +91,15 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
 
 <script type="text/javascript">
-	var i=0;
-	var arr = ["black", "gray", "white"];
-	var arr1 = ["white", "gray", "black"];
-	var color;
-	function goToByScroll(id,duration){
-			
-	$('html,body').animate({scrollTop: $("#"+id).offset().top},duration);
-	}	
-$(document).ready(function(){
-		
-	/*$(document).keydown(function(e){
-		alert( e.keyCode );
-		return false;
-	});*/
 
-	$('#manifesto').click(function(event){
-		event.preventDefault();
-		goToByScroll('gray','slow');
-	});
-	$('#contacts').click(function(event){
-		event.preventDefault();
-		goToByScroll('white','slow');
-	});
-	$('.top').click(function(event){
-		event.preventDefault();
-		goToByScroll('black','slow');
-	});
-
-	$(document).keydown(function(e){
-		var keyCode = e.keyCode || e.which;	
-		switch (keyCode) {
-			case 34:
-			e.preventDefault();
-			$.each(arr, function(index, value) {
-				if ($(window).scrollTop() < $("#"+value).offset().top){
-					color=value;
-					return false;
-					}
-			});
-			goToByScroll(color,'fast');
-		break;	
-		case 33:
-			e.preventDefault();
-			$.each(arr1, function(index, value) { 
-				if ($(window).scrollTop()  > $("#"+value).offset().top){ 
-					color=value;
-					return false;
-				}
-			});
-			goToByScroll(color,'fast');
-		break;	
-
-		}
-	});
-	
+$('a[href^="#"][data-animate]').live('click', function() {
+  var hash = $(this).attr('href');
+  var offset = $(hash).offset();
+  if (offset) {
+    $('html, body').animate({ scrollTop: offset.top }, 'slow');
+    location.hash = hash;
+    return false;
+  }
 });
 </script>
 
@@ -159,18 +117,18 @@ $(document).ready(function(){
   })();
 
 </script>
-
+<!--
 <script type="text/javascript">
 lloogg_clientid = "29a1021885efb079";
 </script>
 <script type="text/javascript" src="http://lloogg.com/l.js?c=29a1021885efb079">
 </script>
-
+-->
   </head>
 
   <body>
-<div id="black" class="container">
-	<a name="top"></a><h1>ZenCoders</h1>
+<div id="home" class="black container">
+	<h1>ZenCoders</h1>
 <div id="logo">
 <pre>                                       with open('ZenCodes.                                  
                                  `num` in numbers    synchronized                            
@@ -216,12 +174,12 @@ lloogg_clientid = "29a1021885efb079";
 </div>
 <div id="menu">
 <br />
-<a href="#gray" id="manifesto">Manifesto</a> - <a id="contacts" href="#white">Contacts</a> - <a target="_blank" href="https://github.com/zencoders/zencoders.github.com/wiki">Wiki</a>
+<a href="#manifesto" data-animate>Manifesto</a> - <a href="#contacts" data-animate>Contacts</a> - <a target="_blank" href="https://github.com/zencoders/zencoders.github.com/wiki">Wiki</a>
 </div>
 </div>
-<div id="gray"> 
+<div id="manifesto" class="gray"> 
 	<div class="container">
-		<a class="top" name="manifesto" href="#top">&uarr;&uarr;&uarr;</a>
+		<a class="top" href="#home" data-animate>&uarr;&uarr;&uarr;</a>
 		<h2>Manifesto</h2>
 		<h3>1. About us</h3>
 We are a group of developers and coders ( software developer ). We are all busy but we would like to build something together.
@@ -277,18 +235,18 @@ Nothing. The group doesn't require any membership fee.
 We don't earn any money! ZenCoders is totally a nonprofit group, now and forever!
 The main advantage to develop software within ZenCoders group is that you increase your experience and visibility.
 </div></div>
-<div id="white"> <div class="container">
-<a class="top" name="contacts" href="#top">&uarr;&uarr;&uarr;</a>	
-<h2>Contacts</h2>
-Mail us on hacklab||ZenCoders.org<br><br>
+<div id="contacts" class="white">
+	<div class="container">
+	<a class="top"  href="#home" data-animate>&uarr;&uarr;&uarr;</a>	
+	<h2>Contacts</h2>
+	Mail us on hacklab||ZenCoders.org<br><br>
 
-Join the official <strong>#zencoders</strong> IRC channel on Freenode<br><br>
+	Join the official <strong>#zencoders</strong> IRC channel on Freenode<br><br>
 
-Join our project or ask to create your own on <a target="_blank" href="https://github.com/zencoders">github</a><br><br>
+	Join our project or ask to create your own on <a target="_blank" href="https://github.com/zencoders">github</a><br><br>
 
-We are waiting for you!
-
-
-</div></div>
+	We are waiting for you!
+	</div>
+</div>
   </body>
 </html>
