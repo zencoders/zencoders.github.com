@@ -1,135 +1,22 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Welcome to ZenCoders</title>
-    <link rel="icon" href="favicon.png" type="image/png" />
-    <!--<script type="text/javascript" src="//js.sopablackout.org/sopablackout.js"></script> -->
-    <style type='text/css'>
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to ZenCoders</title>
+		<link rel="icon" href="favicon.png" type="image/png" />
+		<!--<script type="text/javascript" src="//js.sopablackout.org/sopablackout.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+		<script type="text/javascript" src="js/analytics.js"></script>
 
-	html {
-		height:100%;
-	}
+	</head>
 
-
-	body {
-		height:100%;
-		width:100%;
-		margin:0px;
-		padding:0px;
-		background-color:#000;
-		font-family: monospace;
-		color: #fff;
-	}
-	div{
-		padding-top: 5px;
-	}
-	div#logo {
-		align: center;
-		width: 391px;
-		margin: auto;
-		font-size: 7px;
-	}
-	h1{
-		text-align: center;
-	}
-	#menu {
-		text-align: center;
-		vertical-align: middle;
-		font-size: 17px;
-	}
-
-	a {
-		color: #000;
-		font-weight: bold;
-		text-decoration: none;
-	}
-
-	#menu a{
-		color: #ccc;
-	}
-
-	a:hover {
-		background-color: #ccc;
-	}
-	#menu a:hover{
-		color: #000;
-	}
-	div.black {
-        	background-color: #000;
-		width: 100%;
-		height: 100%;
-	}
-	div.white {
-		height: 100%;
-		width: 100%;
-	        background-color: #fff;
-		color: #000;
-		font-size: 14px;
-		padding-bottom: 70px;
-	}
-	div.gray {
-		width: 100%;
-	        background-color: #eee;
-		color: #000;
-		font-size: 14px;
-		padding-bottom: 70px;
-	}
-	div.container {
-		max-width: 720px;
-		align: center;
-		margin: auto;
-		border: 1;
-	}
-	html div h2{
-	padding-top: 30px;
-	}
-	
-
-</style>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
-
-<script type="text/javascript">
-
-$('a[href^="#"][data-animate]').live('click', function() {
-  var hash = $(this).attr('href');
-  var offset = $(hash).offset();
-  if (offset) {
-    $('html, body').animate({ scrollTop: offset.top }, 'slow');
-    location.hash = hash;
-    return false;
-  }
-});
-</script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29179071-1']);
-  _gaq.push(['_setDomainName', 'zencoders.org']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!--
-<script type="text/javascript">
-lloogg_clientid = "29a1021885efb079";
-</script>
-<script type="text/javascript" src="http://lloogg.com/l.js?c=29a1021885efb079">
-</script>
--->
-  </head>
-
-  <body>
-<div id="home" class="black container">
-	<h1>ZenCoders</h1>
-<div id="logo">
+	<body id="home">
+  		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<header class="black container">
+				<h1>ZenCoders</h1>
+				<div id="logo">
 <pre>                                       with open('ZenCodes.                                  
                                  `num` in numbers    synchronized                            
                              datetime d      glob.      sys.argv[2] .                        
@@ -170,83 +57,75 @@ lloogg_clientid = "29a1021885efb079";
                             11101001001  00   11  100    11  10100010                        
                                 000101001001 10  1001    101000101                           
                                      010010010010110101001010                                
-</pre>
-</div>
-<div id="menu">
-<br />
-<a href="#manifesto" data-animate>Manifesto</a> - <a href="#contacts" data-animate>Contacts</a> - <a target="_blank" href="https://github.com/zencoders/zencoders.github.com/wiki">Wiki</a>
-</div>
-</div>
-<div id="manifesto" class="gray"> 
-	<div class="container">
-		<a class="top" href="#home" data-animate>&uarr;&uarr;&uarr;</a>
-		<h2>Manifesto</h2>
-		<h3>1. About us</h3>
-We are a group of developers and coders ( software developer ). We are all busy but we would like to build something together.
+				</pre>
+				</div><!--logo-->
+			<nav id="menu">
+				<br />
+				<a href="#manifesto" data-animate>Manifesto</a> - <a href="#contacts" data-animate>Contacts</a> - <a target="_blank" href="https://github.com/zencoders/zencoders.github.com/wiki">Wiki</a>
+			</nav>
+		</header><!--div home-->
+		
+		<section id="manifesto" class="gray"> 
+			<div class="container">
+				<a class="top" href="#home" data-animate>&uarr;&uarr;&uarr;</a>
+				<h1>Manifesto</h1>
+				<article>
+					<h2>1. About us</h2>
+					We are a group of developers and coders ( software developer ). We are all busy but we would like to build something together.
 
+					<h2>2. Which advantages can you have joining us?</h2>
+					Each group member can access projects hosted in our open repository. Everyone in the group can work together with others to 
+					develop its projects. It will be easier for all us to develop projects fast and towards innovative directions by working on others' projects. 
+					We will obtain new knowledge that maybe precluded working alone.
 
-<h3>2. Which advantages can you have joining us?</h3>
+					<h2>3. What do we do together?</h2>
+					We want to create a common development place, where everyone, putting his hand to code, can learn from each other to build projects together. 
+					Everyone, handling directly the code, can learn from other members.
 
+					<h2>4. Which technology will be adopted?</h2>
+					We don't adopt particularly any technology and we don't contest or ostracize any one.
 
-Each group member can access projects hosted in our open repository. Everyone in the group can work together with others to develop its projects. It will be easier for all us to develop projects fast and towards innovative directions by working on others' projects. We will obtain new knowledge that maybe precluded working alone.
+					<h2>5. How do we release our software?</h2>
+					The projects of the group are Open-source and the set of licences available is limited to:
+					[GPL and GPL-compatible, BSD, MIT, Apache, Mozilla, Eclipse, DTFYW]
 
-<h3>3. What do we do together?</h3>
+					<h2>6. Who can read our code?</h2>
+					Anyone, anywhere in the world can access to the code developed within the group without actually 
+					being an active part. Everyone, in other words, has the right to checkout our projects even without being a member.
 
+					<h2>7. How are projects managed?</h2>
+					Each project has one or more project managers. To work on a project, in order to avoid chaos, you must be part of the 
+					group and request authorization to the project leader. If you want to bring the project in different directions, you can 
+					fork it becoming responsible for the fork.
 
-We want to create a common development place, where everyone, putting his hand to code, can learn from each other to build projects together. Everyone, handling directly the code, can learn from other members.
+					<h2>8. How can I join ZenCoders?</h2>
+					If you want to join the ZenCoders Group you can send an email to a ZenCoders group member and we will organize a 
+					video call ( skype, hangouts, etc. ) to see and welcome you.
 
-<h3>4. Which technology will be adopted?</h3>
+					<h2>9. How much will it cost?</h2>
+					Nothing. The group doesn't require any membership fee. 
 
+					<h2>10. Will I earn money?</h2>
+					We don't earn any money! ZenCoders is totally a nonprofit group, now and forever!
+					The main advantage to develop software within ZenCoders group is that you increase your experience and visibility.
+				</article>
+			</div>
+		</section>
 
-We don't adopt particularly any technology and we don't contest or ostracize any one.
+		<section id="contacts" class="white">
+			<div class="container">
+			<a class="top"  href="#home" data-animate>&uarr;&uarr;&uarr;</a>	
+			<h1>Contacts</h1>
+				<article>
+				Mail us on hacklab||ZenCoders.org<br><br>
 
-<h3>5. How do we release our software?</h3>
+				Join the official <strong>#zencoders</strong> IRC channel on Freenode<br><br>
 
+				Join our project or ask to create your own on <a target="_blank" href="https://github.com/zencoders">github</a><br><br>
 
-The projects of the group are Open-source and the set of licences available is limited to:
-[GPL and GPL-compatible, BSD, MIT, Apache, Mozilla, Eclipse, DTFYW]
-
-
-<h3>6. Who can read our code?</h3>
-
-
-Anyone, anywhere in the world can access to the code developed within the group without actually being an active part. Everyone, in other words, has the right to checkout our projects even without being a member.
-
-
-<h3>7. How are projects managed?</h3>
-
-
-Each project has one or more project managers. To work on a project, in order to avoid chaos, you must be part of the group and request authorization to the project leader. If you want to bring the project in different directions, you can fork it becoming responsible for the fork.
-
-<h3>8. How can I join ZenCoders?</h3>
-
-
-If you want to join the ZenCoders Group you can send an email to a ZenCoders group member and we will organize a video call ( skype, hangouts, etc. ) to see and welcome you.
-
-
-<h3>9. How much will it cost?</h3>
-
-
-Nothing. The group doesn't require any membership fee. 
-
-<h3>10. Will I earn money?</h3>
-
-
-We don't earn any money! ZenCoders is totally a nonprofit group, now and forever!
-The main advantage to develop software within ZenCoders group is that you increase your experience and visibility.
-</div></div>
-<div id="contacts" class="white">
-	<div class="container">
-	<a class="top"  href="#home" data-animate>&uarr;&uarr;&uarr;</a>	
-	<h2>Contacts</h2>
-	Mail us on hacklab||ZenCoders.org<br><br>
-
-	Join the official <strong>#zencoders</strong> IRC channel on Freenode<br><br>
-
-	Join our project or ask to create your own on <a target="_blank" href="https://github.com/zencoders">github</a><br><br>
-
-	We are waiting for you!
-	</div>
-</div>
+				We are waiting for you!
+				</article>
+			</div>
+		</section>
   </body>
 </html>

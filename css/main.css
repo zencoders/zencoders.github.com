@@ -1,0 +1,90 @@
+html {
+	height:100%;
+}
+
+body {
+	height:100%;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	background-color:#000;
+	font-family: monospace;
+	color: #fff;
+}
+
+div{
+	padding-top: 5px;
+}
+
+div#logo {
+	align: center;
+	width: 391px;
+	margin: auto;
+	font-size: 7px;
+}
+
+header h1{
+	text-align: center;
+}
+
+#menu {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 17px;
+}
+
+
+a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+#menu a{
+	color: #ccc;
+}
+
+
+a:hover {
+	background-color: #ccc;
+}
+
+#menu a:hover{
+	color: #000;
+}
+
+.black {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+}
+
+section.white {
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+	padding-bottom: 70px;
+}
+
+section.gray {
+	width: 100%;
+	background-color: #eee;
+	color: #000;
+	font-size: 14px;
+	padding-bottom: 70px;
+}
+
+.container {
+	max-width: 720px;
+	align: center;
+	margin: auto;
+	border: 1;
+}
+
+html div h2{
+	padding-top: 30px;
+}
+
