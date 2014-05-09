@@ -64,29 +64,30 @@
 				<a href="#manifesto" data-animate>Manifesto</a> - <a href="#contacts" data-animate>Contacts</a> - <a target="_blank" href="https://github.com/zencoders/zencoders.github.com/wiki">Wiki</a>
 			</nav>
 			<br/><br/>
-			<a href="zenconf/2014/index.html">
-			    <div style="width=100%;text-align:center;text-align:-webkit-center;">
-			        <script src="js/countdown.js" type="text/javascript"></script>
-	                <script type="application/javascript">
-                    var myCountdown1 = new Countdown({
-			                                         	  year	: 2014, 
-                                                          month	: 6, 
-                                                          day	 : 4, 
-                                                          hour	: 8,
-                                                          ampm	: "am",
-                                                          minute	: 30, 
-                                                          second	: 0,
-				                                          width:200, 
-				                                          height:45,  
-				                                          rangeHi:"day",
-				                                          style:"flip"	// <- no comma on last item!
-				                                        });
+			<div id="zenconfcounter">
+				<a href="zenconf/2014/index.html">
+					<script src="js/countdown.js" type="text/javascript"></script>
+					<script type="application/javascript">
+					    var myCountdown1 = new Countdown({
+												  year	: 2014, 
+										  month	: 6, 
+										  day	 : 4, 
+										  hour	: 8,
+										  ampm	: "am",
+										  minute	: 30, 
+										  second	: 0,
+												  width:200, 
+												  height:45,  
+												  rangeHi:"day",
+												  style:"flip"	// <- no comma on last item!
+												});
 
-                    </script><br/>to:<br/>
-			        <img src="zenconf/2014/logo_white_small.png">
-			    </div>
-			</a>
-		</header><!--div home-->
+					</script><br/>to<br/>
+					<img alt="ZenConf" src="zenconf/2014/logo_white_small.png">
+				</a>
+			</div><!--div zenconfcounter-->
+			
+		</header>
 		
 		<section id="manifesto" class="gray"> 
 			<div class="container">
