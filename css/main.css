@@ -43,9 +43,6 @@ a {
 	font-weight: bold;
 	text-decoration: none;
 	outline: 0;
-}
-
-article a{
 	border-bottom:1px dotted;
 }
 
@@ -62,6 +59,7 @@ article a{
 }
 
 #menu a{
+	border: 0 none;
 	color: #ccc;
 }
 
@@ -78,13 +76,8 @@ a:hover {
 	color: #000;
 }
 
-
-#sharebuttons > a
-{  border-style: none;
-	border: none; 
-	border-bottom: none;
-	border: 0px;
-	border-style: none!important;
+a.top {
+	border: 0 none;
 }
 
 .black {
@@ -142,7 +135,14 @@ tr:nth-child(even) {
 	display: inline;
 }
 
+
+
 /**responsive**/
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .mobile-hide{ display: none; }
+}
+
 /* 
 Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
