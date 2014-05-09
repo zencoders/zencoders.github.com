@@ -22,7 +22,7 @@ div{
 
 div#logo {
 	align: center;
-	width: 391px;
+
 	margin: auto;
 	font-size: 7px;
 }
@@ -86,7 +86,8 @@ a.top {
 	max-width: 100%;
 	min-height: 100%;
 	color: #fff;
-	padding:10px;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 section.white {
@@ -95,16 +96,19 @@ section.white {
 	background-color: #fff;
 	color: #000;
 	font-size: 14px;
-	padding:10px;
+	padding-left:10px;
+	padding-right:10px;
 
 }
 
 section.gray {
 	max-width: 100%;
+	min-height: 100%;
 	background-color: #eee;
 	color: #000;
 	font-size: 14px;
-	padding:10px;
+	padding-left:10px;
+	padding-right:10px;
 
 }
 
@@ -118,7 +122,7 @@ section.gray {
 }
 
 .container h1{
-	padding-top: 30px;
+	padding-top: 10px;
 }
 
 td, th
@@ -146,6 +150,14 @@ tr:nth-child(even) {
 @media screen and (min-width: 0px) and (max-width: 375px) {
     #menu {
 		font-size: 14px;
+	}
+	div#logo {
+		font-size: 5px;
+	}
+	
+	header h1{
+		margin: 0px;
+		padding: 0px;
 	}
 }
 
