@@ -21,7 +21,7 @@
         
 	</head>
 
-	<body id="home">
+	<body id="home" itemscope itemtype="http://schema.org/Event">
   		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
 		<script type="text/javascript" src="../../js/main.js"></script>
 		<section class="black  container">
@@ -41,25 +41,48 @@
 			<h1>Speaker e Argomenti</h1>
 			<table>
 				<thead>
-					<tr><th>Start</th><th>End</th><th>Speaker</th><th>Talk</th><th>Contact</th></tr>
+					<tr><th>Start</th><th>End</th><th>Speaker</th><th>Talk</th></tr>
 				</thead>
-				<tr><td>09:00</td><td class="mobile-hide">09:25</td><td>Zencoders</td><td>Benvenuto</td><td>&nbsp;</td></tr>
-				<tr><td>09:30</td><td class="mobile-hide">09:55</td><td>Aldo Stracquadanio</td><td>Scala Intro</td><td>aldo.strac@gmail.com</td></tr>
-				<tr><td>10:00</td><td class="mobile-hide">10:25</td><td>Sebastiano Merlino</td><td>How to build SOLID code</td><td>etr@zencoders.org</td></tr>
-				<tr><td>10:30</td><td class="mobile-hide">10:55</td><td>Piksel</td><td>Angularjs + Cordova/Phonegap</td><td>&nbsp;</td></tr>
-				<tr><td>11:00</td><td class="mobile-hide">11:25</td><td>Andrea Spadaccini</td><td>Considerations in scaling large web systems</td><td>spadaccio@google.com</td></tr>
-				<tr><td>11:25</td><td class="mobile-hide">11:40</td><td>---</td><td>Pausa</td><td>---</td></tr>
-				<tr><td>11:40</td><td class="mobile-hide">12:05</td><td>Giuseppe Virz&igrave;</td><td>FHIR - healthcare information exchanging made possible</td><td>info@giuseppevirzi.it</td></tr>
-				<tr><td>12:10</td><td class="mobile-hide">12:35</td><td>Luca Marturana</td><td>Redis Intro</td><td>&nbsp;</td></tr>
-				<tr><td>12:40</td><td class="mobile-hide">13:05</td><td>Salvatore Sanfilippo</td><td>Design tradeoffs in the Redis project history</td><td>&nbsp;</td></tr>
-				<tr><td>13:10</td><td class="mobile-hide">13:35</td><td>Geert Jansen</td><td>Bluepass - an open source, peer-to-peer password manager</td><td>&nbsp;</td></tr>
-				<tr><td>13:40</td><td class="mobile-hide">14:00</td><td>Zencoders</td><td>Conclusione</td><td>&nbsp;</td></tr>
+				<tr><td>09:00</td><td class="mobile-hide">09:25</td><td>Zencoders</td><td>Benvenuto</td></tr>
+				<tr><td>09:30</td><td class="mobile-hide">09:55</td>
+					<td itemscope itemtype="http://schema.org/Person"><span itemprop="name">Aldo Stracquadanio</span> 
+					<a itemprop="email" href="mailto:aldo.strac@gmail.com" class="email"><img src="../../images/mail.png" alt="aldo.strac@gmail.com"></a> <br />
+					<span itemprop="jobTitle"><abbr title="Software Development Engineer">SDE</abbr> - London U.K.</span></td><td>Scala Intro</td></tr>
+				<tr><td>10:00</td><td class="mobile-hide">10:25</td>
+					<td itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sebastiano Merlino</span> 
+					<a itemprop="email" href="mailto:etr@zencoders.org"><img src="../../images/mail.png" alt="etr@zencoders.org"></a><br />
+					<span itemprop="jobTitle"><abbr title="Software Development Engineer">SDE</abbr> @ Amazon</span></td><td>How to build SOLID code</td></tr>
+				<tr><td>10:30</td><td class="mobile-hide">10:55</td>
+					<td itemscope itemtype="http://schema.org/Person"><span itemprop="name">Giovanni Luca Murabito</span> <br />
+					<span itemprop="jobTitle"><abbr title="Software Development">SD</abbr> @ Piksel</span></td><td>Angularjs + Cordova/Phonegap</td></tr>
+				<tr><td>11:00</td><td class="mobile-hide">11:25</td>
+					<td itemscope itemtype="http://schema.org/Person"><span itemprop="name">Andrea Spadaccini</span> 
+					<a itemprop="email" href="mailto:spadaccio@google.com"><img src="../../images/mail.png" alt="spadaccio@google.com"></a><br />
+					<span itemprop="jobTitle"><abbr title="Site Reliability Engineer">SRE</abbr> @ Google</span></td><td>Considerations in scaling large web systems</td></tr>
+				<tr><td>11:25</td><td class="mobile-hide">11:40</td><td>---</td><td>Pausa</td></tr>
+				<tr><td>11:40</td><td class="mobile-hide">12:05</td>
+					<td itemscope itemtype="http://schema.org/Person"><span itemprop="name">Giuseppe Virz&igrave;</span> 
+					<a itemprop="email" href="mailto:info@giuseppevirzi.it"><img src="../../images/mail.png" alt="info@giuseppevirzi.it"></a><br />
+					<span itemprop="jobTitle"><abbr title="System Engineer">SE</abbr> @ Nu.M.I.D.I.A. </span></td><td>FHIR - healthcare information exchanging made possible</td></tr>
+				<tr><td>12:10</td><td class="mobile-hide">12:35</td>
+					<td itemscope itemtype="http://schema.org/Person"><span itemprop="name">Luca Marturana</span> <br />
+					<span itemprop="jobTitle"><abbr title="Software Engineer">SE</abbr> @ A-Tono</span></td><td>Redis Intro</td></tr>
+				<tr><td>12:40</td><td class="mobile-hide">13:05</td>
+					<td itemscope itemtype="http://schema.org/Person"><span itemprop="name">Salvatore Sanfilippo</span><br />
+					<span itemprop="jobTitle">Creator of Redis</span> @ Pivotal</td><td>Design tradeoffs in the Redis project history</td></tr>
+				<tr><td>13:10</td><td class="mobile-hide">13:35</td>
+					<td itemscope itemtype="http://schema.org/Person"><span itemprop="name">Geert Jansen</span><br />
+					<span itemprop="jobTitle">Director @ ravellosystems.com</span></td><td>Bluepass - an open source, peer-to-peer password manager</td></tr>
+				<tr><td>13:40</td><td class="mobile-hide">14:00</td>
+					<td itemscope itemtype="http://schema.org/Person">Zencoders</td><td>Conclusione</td></tr>
 			</table>
 			<p style="text-align:right;font-size:0.8em;">N.B.: La scaletta potrebbe essere soggetta a variazioni</p>
 			<h2>Location</h2>
-			<p>L'evento si terr&agrave; giorno 4 Giugno ore 8:30 - 14:00 presso l'aula magna di 
-			Ingegneria (edificio della didattica) - Cittadella universitaria,
-			Viale A. Doria 6, 95125 - Catania. <a href="http://goo.gl/maps/VfmyN" target="_blank">Indicazioni</a><br/><br/>
+			<p>L'evento si terr&agrave; giorno <span itemprop="startDate" content="2014-06-04T08:00">4 Giugno ore 8:30 - 14:00</span> presso 
+				<span itemprop="location" itemscope itemtype="http://schema.org/Place">l'aula magna di Ingegneria (edificio della didattica) - Cittadella universitaria,
+					<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Viale A. Doria 6, 95125 - Catania.</span>
+				</span>
+				<a href="http://goo.gl/maps/VfmyN" target="_blank">Indicazioni</a><br/><br/>
 			<div class="mobile-hide">
 			<iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.it/maps/ms?msa=0&amp;msid=209104065815044883049.0004ba6a50ed5ecee3ee9&amp;gl=it&amp;hl=it&amp;ie=UTF8&amp;t=h&amp;f=d&amp;daddr=Edificio+n.+14+(Didattica)+%4037.526388,15.074744&amp;ll=37.527724,15.073961&amp;spn=0.003829,0.007725&amp;iwloc=0004ba6a50efc0c1682b9&amp;output=embed"></iframe>
 			</div>
