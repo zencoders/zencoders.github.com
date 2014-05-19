@@ -109,6 +109,16 @@ section.white {
 
 }
 
+section.press {
+	max-width: 100%;
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+	padding-left:10px;
+	padding-right:10px;
+
+}
+
 section.gray {
 	max-width: 100%;
 	min-height: 100%;
