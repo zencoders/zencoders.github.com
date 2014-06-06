@@ -92,14 +92,14 @@ td a img{
 .black {
 	background-color: #000;
 	max-width: 100%;
-	/* min-height: 100%; */
+	min-height: 100%;
 	color: #fff;
 	padding-left:10px;
 	padding-right:10px;
 }
 
 section.white {
-	height: 100%;
+	min-height: 100%
 	max-width: 100%;
 	background-color: #fff;
 	color: #000;
