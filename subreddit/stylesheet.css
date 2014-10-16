@@ -1,0 +1,386 @@
+/* 
+ * /r/ZenCoders stylesheet
+ *
+ * Each image must be uploaded to the subreddit and linked with %%name%%
+ * This style is based on http://www.reddit.com/r/naut
+ **/
+
+#header {
+    background: url(%%header%%) #f3f3f3 no-repeat;
+    height: 200px;
+    border-bottom: 1px solid #D3D3D3;
+    overflow: hidden;
+}
+
+.content {
+    margin: 0 311px 0 0;
+    padding: 10px;
+}
+
+.pagename a {
+    background: url(%%pagename%%) no-repeat;
+    vertical-align: bottom;
+    display: inline-block;
+    width: 90px!important;
+    height: 55px!important;
+    font-size: 0!important;
+}
+
+span.hover a:hover {
+    text-decoration: none!important;
+}
+
+#header-bottom-left {
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+}
+
+#header-img {
+    margin-top: 2px;
+    margin-right: -10px;
+}
+
+#header-img.default-header {
+    background-image: url(%%reddit%%);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border-left: 0px solid #b8b8b8;
+    border-right: 0px solid #b8b8b8;
+    display: inline-block;
+    height: 57px;
+    margin-bottom: -5px;
+    margin-left: 3px;
+    text-indent: -9999px;
+    vertical-align: bottom;
+    width: 60px;
+    outline: none;
+}
+
+.listing-page .tabmenu li:nth-of-type(4),.listing-page .tabmenu li:nth-of-type(6),.listing-page .tabmenu li:nth-of-type(8) {
+    display: none;
+}
+
+.tabmenu li.selected a {
+    background-color: #006600;
+    border-color: #bfd1d6 #bfd1d6 #bfd1d6;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    z-index: 100;
+}
+
+.tabmenu li {
+    display: inline;
+    font-weight: bold;
+    margin: 0px 1px;
+}
+
+.tabmenu {
+    height: 18px;
+    color: #0097bd;
+}
+
+.listing-page .content .link {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 1px solid #E4E4E4;
+    list-style-type: none;
+    padding: 2px;
+}
+
+.link.last-clicked {
+    border: none;
+    overflow: hidden;
+}
+
+.comment .midcol {
+    width: 30px;
+}
+
+.tabmenu li a:hover {
+    background-color: #ffffff;
+    color: #5e5e5e;
+}
+
+.tabmenu li a {
+    text-transform: uppercase;
+    background: transparent;
+    padding: 4px 6px;
+    color: #ffffff;
+}
+
+.tabmenu li.selected a:hover {
+    color: #242424;
+}
+
+#header-bottom-right {
+    top: 180px;
+    height: 40px;
+    background: transparent;
+    border-radius: -0px;
+    color: #7e7e7e;
+    text-transform: uppercase;
+}
+
+.res #header-bottom-right {
+    margin-right: 15px;
+    top: 160px;
+}
+
+#header-bottom-right a {
+    color: #ffffff;
+}
+
+.user {
+    font-size: 12px;
+}
+
+.expando-button {
+    background: transparent;
+    float: left;
+    height: 29px;
+    margin: 0 10px 0 2px;
+    width: 28px;
+}
+
+.expando-button.selftext.collapsed {
+    background-image: url(%%buttons%%);
+    background-position: 0 -27px;
+    background-repeat: no-repeat;
+}
+
+.expando-button.selftext.collapsed:hover,.eb-sch {
+    background-image: url(%%buttons%%);
+    background-position: -29px -27px;
+    background-repeat: no-repeat;
+}
+
+.expando-button.selftext.expanded,.eb-se {
+    background-image: url(%%buttons%%);
+    background-position: -0px 1px;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+.expando-button.selftext.expanded:hover,.eb-se {
+    background-image: url(%%buttons%%);
+    background-position: -29px 1px;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+.thing .title {
+    color: #0068B1;
+    margin-bottom: 5px;
+}
+
+.link .usertext .md {
+    background-color: #F7F7F7;
+    border: 0px solid #D3D3D3;
+    border-radius: 0;
+    padding: 0 4px;
+}
+
+.user .userkarma {
+    border-bottom: medium none;
+    cursor: default;
+    font-weight: normal;
+    border-bottom: none;
+}
+
+span.user a {
+    color: #FFCC00;
+    outline: none;
+}
+
+body>.content .link .midcol {
+    width: 26px!important;
+}
+
+.arrow.up {
+    background-image: url(%%arrowup%%);
+    background-position: 0 0;
+    width: 25px;
+}
+
+.arrow.upmod {
+    background-image: url(%%arrowupmod%%);
+    background-position: 0 0;
+    width: 25px;
+}
+
+.arrow.down {
+    background-image: url(%%arrowdown%%);
+    background-position: 0 0;
+    width: 25px;
+}
+
+.arrow.downmod {
+    background-image: url(%%arrowdownmod%%);
+    background-position: 0 0;
+    width: 25px;
+}
+
+#search input[type="text"] {
+    border: 1px solid #808080;
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+    width: 287px;
+}
+
+.infobar {
+    background-color: #EEEEEE;
+    border: 1px solid #ffffff;
+    border-radius: 0!important;
+    font-size: small;
+    margin: 5px 305px 5px 0;
+    padding: 5px 10px;
+}
+
+.morelink .nub {
+    visibility: hidden;
+}
+
+.morelink {
+    background: #3C3C3C;
+    border: 1px solid #f9f9f9;
+    display: block;
+    font-size: 150%;
+    font-weight: bold;
+    height: 29px;
+    letter-spacing: -1px;
+    line-height: 29px;
+    position: relative;
+    text-align: center;
+}
+
+.morelink a {
+    color: #FFF;
+}
+
+.morelink:hover {
+    background: #484848;
+}
+
+.gadget .midcol {
+    margin: 0;
+    width: 35px;
+}
+
+.keyHighlight,.sitetable .comment,.sitetable .comment .comment,.sitetable .comment .comment .comment,.sitetable .comment .comment .comment .comment,.sitetable .comment .comment .comment .comment .comment,.sitetable .comment .comment .comment .comment .comment .comment,.sitetable .comment .comment .comment .comment .comment .comment .comment,.sitetable .comment .comment .comment .comment .comment .comment .comment .comment,.sitetable .comment .comment .comment .comment .comment .comment .comment .comment .comment,.sitetable .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: transparent!important;
+    border: none!important;
+}
+
+.res #userbarToggle {
+    min-height: 45px;
+    margin-bottom: -6px;
+    position: absolute;
+    border-radius: 0px;
+    height: 45px;
+    left: -8px;
+    width: 15px;
+    padding-right: 3px;
+    font-size: 13px;
+    color: #B4B4B4;
+    display: inline-block;
+    background-color: #E2E2E2;
+    border-right: 1px solid #cee3f8;
+    cursor: pointer;
+    text-align: right;
+    line-height: 44px;
+}
+
+#userbarToggle.userbarShow {
+    left: -10px;
+    margin-top: -12px;
+}
+
+.flair-vip {
+    border: none;
+    font-weight: bold;
+    background-color: #B0B0B0;
+    color: #FFCC33;
+}
+
+.flair-psn {
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+    color: #0000CC;
+}
+
+.flair-xbl {
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+    color: #00CC00;
+}
+
+.flair-pc {
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+    color: purple;
+}
+
+.flair-green {
+    color: green;
+}
+
+.flair-red {
+    color: red;
+}
+
+.flair-orange {
+    color: orange;
+}
+
+.flair-yellow {
+    color: yellow;
+}
+
+.flair-purple {
+    color: purple;
+}
+
+.flair-navy {
+    color: navy;
+}
+
+.flair-black {
+    color: black;
+}
+
+.flair-pink {
+    color: pink;
+}
+
+.flair-cyan {
+    color: cyan;
+}
+
+.flair-brown {
+    color: brown;
+}
+
+.flair-blue {
+    color: blue;
+}
+
+.flair-mod {
+    border: none;
+    font-weight: bold;
+    background-color: #B0B0B0;
+    color: #FF3300;
+}
+
+a[href="/sidebarpic1"]:after {
+    content: url(%%side1%%);
+}
+
+a[href="/sidebarpic2"]:after {
+    content: url(%%side2%%);
+}
+
